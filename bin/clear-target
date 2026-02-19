@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TARGET_FILE="/tmp/target"
+
+if [ -f "$TARGET_FILE" ]; then
+    rm "$TARGET_FILE"
+    echo "Target cleared"
+else
+    echo "No target set"
+fi
