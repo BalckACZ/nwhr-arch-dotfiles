@@ -1,0 +1,73 @@
+/* ============================================
+   NWHR Rofi Config - Main Launcher
+   ============================================ */
+
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "  Apps";
+    display-run: "  Run";
+    display-window: "  Windows";
+}
+
+* {
+    bg:       #1a1a1aee;
+    bg-alt:   #2e2e2eff;
+    fg:       #c8c8c8ff;
+    fg-alt:   #808080ff;
+    accent:   #5e81acff;
+    urgent:   #d45e5eff;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    width: 500px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @bg-alt;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 10px;
+    spacing: 10px;
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    placeholder: "search...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 7;
+    columns: 1;
+    spacing: 5px;
+    padding: 10px 0 0 0;
+}
+
+element {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
