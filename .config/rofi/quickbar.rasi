@@ -1,0 +1,75 @@
+/* ============================================
+   NWHR Rofi Quick Bar - Mac style dock
+   super + space
+   ============================================ */
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "";
+}
+
+* {
+    bg:       #1a1a1aee;
+    bg-alt:   #2e2e2eff;
+    fg:       #c8c8c8ff;
+    fg-alt:   #808080ff;
+    accent:   #5e81acff;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    anchor: south;
+    location: south;
+    width: 600px;
+    y-offset: -20px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @bg-alt;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+inputbar {
+    children: [entry];
+    background-color: @bg-alt;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+entry {
+    placeholder: "quick launch...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 1;
+    columns: 6;
+    spacing: 10px;
+    padding: 15px 0 0 0;
+    layout: horizontal;
+}
+
+element {
+    padding: 15px;
+    border-radius: 12px;
+    orientation: vertical;
+}
+
+element selected {
+    background-color: @bg-alt;
+}
+
+element-icon {
+    size: 40px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    font: "JetBrainsMono Nerd Font 8";
+}
