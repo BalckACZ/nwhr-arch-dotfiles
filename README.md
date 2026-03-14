@@ -1,2 +1,9 @@
 # nwhr-arch-dotfiles
-My configuration for BSPWM on ARCH LINUX
+
+# ============================================
+# We all come from NWHR
+# Main installer for BSPWM NWHR environment
+# Execute with: sudo ./install.sh
+# ============================================
+
+a classic graphical environment for Arch
