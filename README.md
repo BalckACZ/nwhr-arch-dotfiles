@@ -7,3 +7,12 @@
  Execute with: sudo ./install.sh
 
 a classic graphical environment for Arch
+
+We added configuration files for 
+• Alacritty
+• BSPWM
+• sxhkd
+• ly
+• picom
+• rofi
+• polybar
